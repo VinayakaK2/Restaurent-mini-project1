@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel | Tasty Bites</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-page" class="login-page">
+    <h2>Admin Login</h2>
+    <input id="username" type="text" placeholder="Username" />
+    <input id="password" type="password" placeholder="Password" />
+    <button id="login-btn" class="btn-primary">Login</button>
+  </div>
+
+  <div id="admin-panel" class="admin-panel hidden">
+    <header class="admin-header">
+      <h2>Admin Panel</h2>
+      <button id="logout-btn" class="btn-ghost">Logout</button>
+    </header>
+
+    <section class="admin-section">
+      <h3>Menu Management</h3>
+      <input id="dish-name" placeholder="Dish Name" />
+      <input id="dish-price" type="number" placeholder="Price" />
+      <input id="dish-img" placeholder="Image URL" />
+      <button id="add-dish" class="btn-primary">Add Dish</button>
+
+      <ul id="menu-admin-list"></ul>
+    </section>
+
+    <section class="admin-section">
+      <h3>Orders</h3>
+      <ul id="order-list"></ul>
+      <button id="clear-orders" class="btn-danger">Clear Orders</button>
+    </section>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
