@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #e63946;
+  color: white;
+  padding: 15px 30px;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-links a:hover,
+.nav-links .active {
+  text-decoration: underline;
+}
+.cart-icon {
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover;
+  color: white;
+  padding: 100px 20px;
+}
+.hero input {
+  margin-top: 20px;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* MENU GRID */
+.menu {
+  padding: 40px;
+  text-align: center;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.menu-item {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.menu-item:hover { transform: scale(1.05); }
+.menu-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.menu-item .info {
+  padding: 10px;
+}
+.btn-primary, .btn-ghost, .btn-danger {
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.btn-primary { background: #e63946; color: white; }
+.btn-ghost { background: transparent; border: 1px solid #e63946; color: #e63946; }
+.btn-danger { background: #d62828; color: white; }
+
+/* CART */
+.cart {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ADMIN */
+.hidden { display: none; }
+.login-page {
+  text-align: center;
+  padding: 50px;
+}
+.admin-section {
+  padding: 20px;
+}
+.page-section {
+  padding: 60px;
+  text-align: center;
+}
