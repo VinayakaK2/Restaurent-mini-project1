@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasty Bites | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🍽️ Tasty Bites</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+      <div class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Tasty Bites</h1>
+    <p>Your favorite meals, just a click away!</p>
+    <input type="text" id="search" placeholder="Search for a dish..." />
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div id="menu-list" class="menu-grid"></div>
+  </section>
+
+  <div id="cart" class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p><strong>Total:</strong> $<span id="cart-total">0</span></p>
+    <button id="place-order" class="btn-primary">Place Order</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
